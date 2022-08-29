@@ -1,0 +1,68 @@
+/* ==UserStyle==
+@name         HackerNews.css
+@version      0.1
+@namespace    https://palash.dev
+@homepageURL  https://github.com/debpalash/HackerNews.css
+@description  Makes Hacker News dark eye candy
+@author       palash.dev https://github.com/debpalash/
+@preprocessor   stylus
+@license      MIT
+==/UserStyle== */
+
+
+@-moz-document url-prefix("https://news.ycombinator.com") {
+
+html, body, .hnmain, tr, td, table, a, .commtext{
+	background: #333 !important;
+	color:#f7f3f3b3 !important;
+}
+
+.athing,.title>a{
+	font-family: monolisa;
+	font-size: large;
+	padding-bottom: 5px;
+}
+.spacer{
+	padding: 5px;
+}
+.title>a:hover{
+	border-bottom-color: #be0fb2 !important;
+	color: cyan !important;
+}
+.subtext{
+	font-size: small;
+	border-bottom: 2px solid #ffff330a;
+	padding-bottom: 5px;
+}
+.subtext:hover{
+	color: cyan !important;
+	border-bottom: 2px solid #c9cf71c7;
+}
+
+#hnmain > tbody > tr:nth-child(1) > td > table{
+	padding-bottom:10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #eceaf09e;
+
+}
+
+/* post content  */
+a:hover{
+	color:#34c5a8d6 !important;
+}
+.fatitem{
+	font-family: Serif !important;
+	color: #fff !important;
+	border-bottom: 1px solid #8784657a;
+}
+
+/*  comment area*/
+
+.comhead>a{
+		color:#00ffff8f !important;
+}
+.commtext {
+	font-family: calibri;
+	font-size: medium;
+}
+}
