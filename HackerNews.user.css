@@ -1,3 +1,17 @@
+/* ==UserStyle==
+@name         HackerNews.css
+@version      0.1
+@namespace    https://palash.dev
+@homepageURL  https://github.com/debpalash/HackerNews.css
+@description  Makes Hacker News dark eye candy
+@author       palash.dev https://github.com/debpalash/
+@preprocessor   stylus
+@license      MIT
+==/UserStyle== */
+
+
+@-moz-document url-prefix("https://news.ycombinator.com") {
+	
 html, body, .hnmain, tr, td, table, a, .commtext{
 	background: #333 !important;
 	color:#f7f3f3b3 !important;
@@ -50,4 +64,5 @@ a:hover{
 .commtext {
 	font-family: calibri;
 	font-size: medium;
+}
 }
